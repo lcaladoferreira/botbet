@@ -1,0 +1,73 @@
+
+
+.perf-filter-btn-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: end;
+    align-items: center;
+}
+
+.perf-filter-btn {
+    display: flex;
+    justify-items: end;
+}
+
+.perf-filter-btn:hover {
+    background: grey;
+    cursor: pointer;
+}
+
+.perf-filter-btn > * {
+    margin: 5px
+}
+
+/*
+ * Hiding and not allowing filters to be changed when not shown
+ */
+
+.perf-filters.show {
+    max-height: 999em;
+    opacity: 1;
+    padding: 20px;
+    width: 100%;
+}
+
+.perf-filters {
+    max-height: 0;
+    opacity: 0;
+}
+
+.perf-filters:not(.show) * {
+    pointer-events: none !important;
+}
+
+.perf-info {
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+    padding: 50px 0;
+}
+
+.perf-info h4 {
+    padding: 20px;
+    font-weight: bold;
+}
+
+/**/
+
+.perf-info > div {
+    display: grid;
+    place-items: center;
+}
+
+.perf-chart {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .perf-info {
+        grid-template-columns: 50% 50%;
+    }
+}

@@ -1,0 +1,5 @@
+.line-slider-container {
+    max-width: 960px;
+    display: grid;
+    place-items: center;
+}

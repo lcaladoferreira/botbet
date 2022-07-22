@@ -1,0 +1,40 @@
+.dash-nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-right: 2px solid crimson;
+    position: relative;
+    min-height: 80vh;
+}
+
+.dash-nav-hide {
+    transform: translateX(-100%);
+}
+
+.dash-nav-hide *:not(div) {
+    opacity: 0;
+}
+
+.nav-title {
+    grid-column: 1 / span 4;
+}
+
+a {
+    grid-column: 2 / span 3;
+    text-align: left;
+}
+
+.dash-nav-collapse {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 3vw;
+    width: 3vw;
+    min-height: 40px;
+    min-width: 40px;
+    background: red;
+    transform: translateX(100%);
+}
+
+.nav-selected {
+    background: #61dafb;
+}

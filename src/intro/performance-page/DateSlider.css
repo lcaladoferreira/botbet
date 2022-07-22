@@ -1,0 +1,19 @@
+.track-selected, .track {
+    stroke-width: 10px;
+    stroke-linecap: round;
+}
+
+.track {
+    stroke: rgba(0,0,0,0.2);
+}
+
+.track-selected {
+    stroke: #B5A1D2;
+}
+
+
+#d3-date-slider {
+    cursor: pointer;
+    max-width: 960px;
+    margin: 0 auto;
+}
